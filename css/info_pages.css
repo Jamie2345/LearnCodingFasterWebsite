@@ -1,0 +1,68 @@
+.about-us-container, .our-services-container, .contact-container, .questions-container, .question-contact-container {
+  color: #f2f2f2;
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 50px 100px;
+}
+
+.about-us-container div, .our-services-container div, .contact-container div, .question-contact-container div, .questions-container div{
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 25px 0;
+}
+
+.about-us-container h1, .our-services-container h1, .contact-container h1, .question-contact-container h1, .questions-container h1 {
+  font-size: 35px;
+}
+
+.about-us-container h2, .our-services-container h2, .contact-container h2, .question-contact-container h2, .questions-container h2 {
+  font-size: 22px;
+}
+
+.about-us-container p, .our-services-container p, .contact-container p, .question-contact-container p, .questions-container p {
+  font-size: 22px;
+}
+
+.questions-container p {
+  color: #999;
+}
+
+.about-us-container a, .our-services-container a, .contact-container a, .question-contact-container a {
+  font-size: 22px;
+  color: #fff;
+  font-weight: 600;
+  text-decoration-line: none;
+}
+
+#about-newsletter {
+  width: 100%;
+  margin: 0;
+}
+
+#about-email-field, #about-email-wrapper {
+  padding: 0;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+}
+
+.our-services-container {
+  padding-bottom: 100px;
+}
+
+.contact-container {
+  padding: 120px 0;
+}
+
+.question-contact-container {
+  padding-bottom: 0;
+}

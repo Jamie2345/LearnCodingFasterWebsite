@@ -1,0 +1,100 @@
+#email-popup {
+  font-family: 'Poppins', 'Public sans', 'sans-serif';
+  display: block;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  width: 100%;
+  max-width: 700px;
+  padding: 30px 50px 50px 50px;
+  border-radius: 8px;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 5px 30px rgba(0,0,0,0.30);
+  background: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#email-popup.active {
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.popup-image {
+  max-width: 120px;
+  max-height: 120px;
+  border-radius: 50%;
+  box-shadow: 5px 5px 30px rgba(0,0,0,.2);
+}
+
+.popup-title {
+  font-size: 38px;
+  font-weight: 500;
+  margin: 20px 0px 10px;
+}
+
+.close-div {
+  text-align: right;
+}
+
+.popup-close {
+  padding: 0px 10px 10px 10px;
+}
+
+.email-content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px 0 20px 0;
+  text-align: center;
+}
+.email-content #email-icon {
+  max-width: 120px;
+}
+
+.email-content p {
+  font-size: 18px;
+}
+
+.email-content .inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.email-content .inputBox input {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, .2);
+  padding: 15px;
+  outline: none;
+  font-size: 18px;
+}
+
+.email-content .inputBox input[type="submit"] {
+  max-width: 200px;
+  border-radius: 2.5px;
+  background: #03a9f4;
+  color: #fff;
+  border: none;
+  position: relative;
+  padding: 15px 20px;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.email-content .inputBox input[type="submit"]:hover {
+  letter-spacing: 4px;
+}

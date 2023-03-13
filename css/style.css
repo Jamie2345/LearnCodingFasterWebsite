@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+body {
+  font-family: 'Public Sans', 'sans-serif';
+  background: #222;
+  content: '';
+  top: 0;
+  left: 0;
+  min-height:100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+.full-page-container#blur.active {
+  filter: blur(20px);
+  pointer-events: none;
+  user-select: none;
+}
+
+.main-container {
+  margin: 30px;
+}
+
+.more-info-p {
+  text-align: center;
+  font-size: 18px;
+  padding-bottom: 15px;
+}
+
+.more-info-a {
+  color: #f2f2f2;
+}
+
+.video-section, .channel-section, .courses-section, .projects-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 3rem 1rem;
+  padding: 3rem 0;
+  margin: 0 1.5rem;
+  border-top: 4px solid #CCC;
+}
+
+.newsletter-section {
+  gap: 3rem 1rem;
+  padding: 3rem 0;
+  margin: 0 1.5rem;
+  border-top: 4px solid #CCC;
+}
+
+.no-border-top {
+  border-top: none;
+}
+
+.video-section {
+  padding-bottom: 25px;
+}
+
+.video-section:first-child {
+  border-top: none;
+}
+
+.video-container, .channel-container, .course-container, .project-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.channel-container {
+  align-items: center;
+}
+
+.thumbnail, .course-thumbnail, .project-thumbnail {
+  position: relative;
+  display: flex;
+}
+
+.thumbnail-image {
+  width: 100%;
+  height: 100%;
+  min-width: 300px;
+  min-height: 150px;
+  background-color: #AAA;
+  border-radius: 5%;
+}
+
+.thumbnail::before {
+  content: attr(data-duration);
+}
+
+.course-thumbnail::before {
+  content: attr(cost);
+}
+
+.project-thumbnail::before {
+  content: attr(difficulty);
+}
+
+.thumbnail::before, .course-thumbnail::before, .project-thumbnail::before {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: white;
+  right: 5px;
+  bottom: 5px;
+  padding: .1em .3em;
+  border-radius: .3em;
+  font-size: .9rem;
+}
+
+.course-thumbnail::before, .project-thumbnail::before {
+  font-size: 1rem;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.video-bottom-section {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 1rem;
+}
+
+.channel-bottom-section {
+  display: block;
+  margin-top: 1rem;
+  line-height: 1.35rem;
+  text-align: center;
+}
+
+.channel-icon {
+  margin-right: .75rem;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  background-color: #AAA;
+}
+
+.video-details, .course-details, .project-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.course-details, .project-details {
+  margin-top: 1rem;
+}
+
+.video-title, .channel-title, .course-title, .project-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: .5rem;
+  text-decoration: none;
+  color: white;
+}
+
+.video-channel-name, .course-by, .project-type {
+  margin-bottom: .1rem;
+  text-decoration: none;
+}
+
+.video-channel-name, .video-metadata, .channel-metadata, .course-by, .course-metadata, .project-type {
+  color: #777;
+}
+
+
+.video-section-title, .channel-section-title, .courses-section-title, .projects-section-title {
+  grid-column: 1 / -1;
+  margin: -.5rem 0;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 .5rem;
+}
+
+.newsletter-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.newsletter-title {
+  color: white;
+  font-size: 3rem;
+}
+
+.newsletter-details-div {
+  font-size: 15px;
+  padding-bottom: 1.5rem;
+  width: 80%;
+  max-width: 800px;
+}
+
+.newsletter-description {
+  color: #777;
+}
+
+.section-title-close, .popup-close {
+  border: none;
+  background: none;
+  padding: 0;
+  color: white;
+  font-size: 2rem;
+  color: #777;
+  cursor: pointer;
+}
+
+
+.video-channel-name, .section-title-close, .course-by, .popup-close, .project-type {
+  transition: color 150ms;
+}
+
+.discord-popup-close:hover {
+  color: #666;
+}
+
+.video-channel-name:hover, .section-title-close:hover, .course-by:hover, .project-type:hover {
+  color: #888
+}
+
+.channel-image {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+/* Seeking a place to receive advice and guidance? LearnCodingFaster is all about collaborating, sharing, conversation, and helping others! */
+
+
+
+
+
