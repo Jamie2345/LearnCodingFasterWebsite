@@ -124,7 +124,7 @@ function elementFromHTML(html) {
 
 
 let videoLoader = {
-  'APIKEY': 'YOUTUBE_DATA_API_KEY',
+  'APIKEY': 'AIzaSyAHFl2nfLBx7kT1ejNvu4n3MHeEQYUQLbE',
   
   getVideoData: async function(video_id) {
     var url = "https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&id=" + video_id + "&key=" + this.APIKEY;
@@ -206,7 +206,7 @@ let videoLoader = {
 }
 
 let channelLoader = {
-  'APIKEY': 'YOUTUBE_DATA_API_KEY',
+  'APIKEY': 'AIzaSyAHFl2nfLBx7kT1ejNvu4n3MHeEQYUQLbE',
 
   getChannelData(channel) {
     var url = `https://youtube.googleapis.com/youtube/v3/channels?part=snippet%2CcontentDetails%2Cstatistics&id=${channel}&key=${this.APIKEY}`
