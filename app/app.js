@@ -125,6 +125,7 @@ function elementFromHTML(html) {
 
 let videoLoader = {
   'APIKEY': 'AIzaSyBAn1aqDQASPT_vOOuUWvgVbWA-nbZoR0I',
+  console.log("test")
   
   getVideoData: async function(video_id) {
     var url = "https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&id=" + video_id + "&key=" + this.APIKEY;
